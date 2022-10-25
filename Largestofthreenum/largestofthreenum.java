@@ -12,10 +12,14 @@ n1 = sc.nextInt();
 System.out.println("Enter number 2");  
 n2 = sc.nextInt();  
 System.out.println("Enter number 3");  
-n3 = sc.nextInt();   
+n3 = sc.nextInt();
+if(n1==n2 && n2==n3){
+  System.out.println("ALL THE NUMBERS ARE EQUAL);
+}
 temp=n1>n2?n1:n2;  
 
-largest=n3>temp?n3:temp;  
+largest=n3>temp?n3:temp; 
+
 System.out.println("The largest number is: "+largest);  
 }  
 }  
