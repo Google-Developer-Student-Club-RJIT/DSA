@@ -6,4 +6,4 @@ def finglargest(a,b,c):
     elif(c>a)and(c>b):
         return c
     else:
-        print ("numbers are equal")
+        return ("numbers are equal")
