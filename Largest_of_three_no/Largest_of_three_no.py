@@ -6,6 +6,6 @@ def Largest_of_three_no(a,b,c):
     elif(c>a)and(c>b):
         return c
     else:
-        return ("numbers are equal")
+        return "numbers are equal"
 
 print(Largest_of_three_no(1,2,3))
