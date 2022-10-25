@@ -6,15 +6,15 @@
 class Solution:
     def isDivisible(self, s):
         # code here
-        x=int(s,2)
-        t=0
-        x=str(x)
-        for i in x:
-            t+=int(i)
-        if t%3==0:
-            return 1
-        else:
-            return 0
+        n = len(s)
+        s1 = 0
+        for i in range(0,n,2):
+            s1 = s1 + int(s[i])
+        s2 = 0
+        for i in range(1,n,2):
+            s2 = s2 + int(s[i])    
+        if abs(s1-s2) % 3 == 0: return 1
+        return 0
 
 
 #{
