@@ -2,15 +2,18 @@
  
 int main()
 {
-    int A = 1, B = 2, C = 3;
-    if (A >= B && A >= C)
+    int A = 3, B = 3, C = 3;
+    if (A > B && A > C){
         printf("%d is the largest number.", A);
- 
-    if (B >= A && B >= C)
+    }
+    else if (B > A && B > C){
         printf("%d is the largest number.", B);
- 
-    if (C >= A && C >= B)
+    }
+    else if (C > A && C > B){
         printf("%d is the largest number.", C);
- 
+    }
+    else{
+        printf("numbers are equal or invalid");
+    }
     return 0;
 }
