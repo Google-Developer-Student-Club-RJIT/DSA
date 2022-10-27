@@ -2,7 +2,13 @@
  
 int main()
 {
-    int A = 3, B = 3, C = 3;
+    int A , B , C;
+    printf("Enter number a : ");
+        scanf("%d", &A); 
+    printf("Enter number b : ");
+        scanf("%d", &B); 
+    printf("Enter number c : ");
+        scanf("%d", &C); 
     if (A > B && A > C){
         printf("%d is the largest number.", A);
     }
@@ -13,7 +19,7 @@ int main()
         printf("%d is the largest number.", C);
     }
     else{
-        printf("numbers are equal or invalid");
+        printf("largest numbers is equal to another number or numbers are invalid invalid");
     }
     return 0;
 }
